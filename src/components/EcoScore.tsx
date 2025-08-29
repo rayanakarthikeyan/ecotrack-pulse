@@ -4,10 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { Leaf, Zap, Users } from "lucide-react";
 
 const EcoScore = () => {
-  const currentScore = 785;
-  const monthlyTarget = 1000;
-  const co2Saved = 23.4;
-  const greenTrips = 47;
+  const currentScore = 1247;
+  const monthlyTarget = 1500;
+  const co2Saved = 34.8;
+  const greenTrips = 73;
+  const moneySaved = 1420;
 
   return (
     <Card className="bg-gradient-eco shadow-eco border-0 text-primary-foreground">
@@ -34,29 +35,36 @@ const EcoScore = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-4 pt-2">
+        <div className="grid grid-cols-3 gap-3 pt-2">
           <div className="text-center">
-            <div className="flex items-center justify-center gap-1 text-sm text-primary-foreground/90">
-              <Zap className="h-4 w-4" />
+            <div className="flex items-center justify-center gap-1 text-xs text-primary-foreground/90">
+              <Zap className="h-3 w-3" />
               <span>CO₂ Saved</span>
             </div>
-            <div className="text-lg font-semibold text-primary-foreground">{co2Saved} kg</div>
+            <div className="text-sm font-semibold text-primary-foreground">{co2Saved} kg</div>
           </div>
           <div className="text-center">
-            <div className="flex items-center justify-center gap-1 text-sm text-primary-foreground/90">
-              <Users className="h-4 w-4" />
-              <span>Green Trips</span>
+            <div className="flex items-center justify-center gap-1 text-xs text-primary-foreground/90">
+              <Users className="h-3 w-3" />
+              <span>Trips</span>
             </div>
-            <div className="text-lg font-semibold text-primary-foreground">{greenTrips}</div>
+            <div className="text-sm font-semibold text-primary-foreground">{greenTrips}</div>
+          </div>
+          <div className="text-center">
+            <div className="flex items-center justify-center gap-1 text-xs text-primary-foreground/90">
+              <span>₹</span>
+              <span>Saved</span>
+            </div>
+            <div className="text-sm font-semibold text-primary-foreground">₹{moneySaved}</div>
           </div>
         </div>
 
         <div className="flex gap-2 pt-2">
           <Badge variant="secondary" className="bg-primary-foreground/20 text-primary-foreground border-0">
-            Eco Champion
+            Metro Master
           </Badge>
           <Badge variant="secondary" className="bg-primary-foreground/20 text-primary-foreground border-0">
-            Cyclist
+            Hyd Eco Hero
           </Badge>
         </div>
       </CardContent>
