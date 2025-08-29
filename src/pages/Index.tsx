@@ -13,29 +13,29 @@ const Index = () => {
   const stats = [
     {
       label: "CO₂ Saved Today",
-      value: "342.8 kg",
-      change: "+18%",
+      value: "156.7 kg",
+      change: "+12%",
       icon: <TrendingUp className="h-4 w-4" />,
       positive: true
     },
     {
-      label: "Metro Trips",
-      value: "8,947",
-      change: "+15%",
+      label: "Active Users",
+      value: "2,847",
+      change: "+8%",
       icon: <Users className="h-4 w-4" />,
       positive: true
     },
     {
-      label: "Eco Routes Active",
-      value: "67",
-      change: "+8",
+      label: "Green Routes",
+      value: "34",
+      change: "+3",
       icon: <MapPin className="h-4 w-4" />,
       positive: true
     },
     {
-      label: "Charging Points",
-      value: "243",
-      change: "+12",
+      label: "EV Stations",
+      value: "127",
+      change: "+5",
       icon: <Zap className="h-4 w-4" />,
       positive: true
     }
@@ -70,11 +70,11 @@ const Index = () => {
           <div className="container mx-auto px-4 h-full flex items-center">
             <div className="text-white max-w-2xl">
               <h1 className="text-4xl font-bold mb-4">
-                Travel Smart Hyderabad, <span className="text-eco-secondary">Breathe Clean Air</span>
+                Transform Your Travel, <span className="text-eco-secondary">Transform Our Planet</span>
               </h1>
               <p className="text-lg mb-6 text-white/90">
-                Join thousands of Hyderabadis using metro, bikes, and eco-friendly transport. 
-                Beat traffic, save money, earn rewards, and help make our city cleaner.
+                Join thousands of eco-conscious travelers making sustainable transportation choices. 
+                Plan smarter journeys, earn rewards, and help build a greener future.
               </p>
               <div className="flex gap-3">
                 <Button size="lg" className="bg-white text-eco-primary hover:bg-white/90">

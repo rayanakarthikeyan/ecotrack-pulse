@@ -12,50 +12,30 @@ const JourneyPlanner = () => {
   const routeOptions = [
     {
       id: 1,
-      type: "metro",
-      icon: <Bus className="h-4 w-4" />,
-      duration: "25 min",
-      co2: "0.5 kg",
-      cost: "₹25",
-      eco: true,
-      route: "Miyapur to Hitech City"
-    },
-    {
-      id: 2,
       type: "bike",
       icon: <Bike className="h-4 w-4" />,
-      duration: "35 min",
+      duration: "22 min",
       co2: "0 kg",
-      calories: "220",
+      calories: "180",
       cost: "Free",
       eco: true,
     },
     {
-      id: 3,
+      id: 2,
       type: "bus",
       icon: <Bus className="h-4 w-4" />,
-      duration: "42 min",
-      co2: "1.2 kg",
-      cost: "₹15",
-      eco: true,
-      route: "TSRTC City Bus"
-    },
-    {
-      id: 4,
-      type: "auto",
-      icon: <Car className="h-4 w-4" />,
       duration: "18 min",
-      co2: "2.1 kg",
-      cost: "₹120",
-      eco: false,
+      co2: "0.8 kg",
+      cost: "$2.50",
+      eco: true,
     },
     {
-      id: 5,
-      type: "cab",
+      id: 3,
+      type: "car",
       icon: <Car className="h-4 w-4" />,
-      duration: "15 min",
-      co2: "2.8 kg",
-      cost: "₹180",
+      duration: "12 min",
+      co2: "3.2 kg",
+      cost: "$8.40",
       eco: false,
     },
   ];
@@ -73,7 +53,7 @@ const JourneyPlanner = () => {
           <div className="relative">
             <MapPin className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
             <Input
-              placeholder="From (e.g., Banjara Hills)"
+              placeholder="From"
               value={from}
               onChange={(e) => setFrom(e.target.value)}
               className="pl-10"
@@ -82,7 +62,7 @@ const JourneyPlanner = () => {
           <div className="relative">
             <MapPin className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
             <Input
-              placeholder="To (e.g., Hitech City)"
+              placeholder="To"
               value={to}
               onChange={(e) => setTo(e.target.value)}
               className="pl-10"
