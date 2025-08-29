@@ -6,20 +6,21 @@ import { Users, Calendar, Trophy, TrendingUp } from "lucide-react";
 
 const CommunityChallenge = () => {
   const activeChallenge = {
-    title: "Green Week Challenge",
-    description: "Community goal: 10,000 eco-friendly trips",
-    progress: 7834,
-    target: 10000,
-    daysLeft: 3,
-    participants: 2847,
-    reward: "Plant 100 trees in the city park"
+    title: "Hyderabad Clean Air Week",
+    description: "Community goal: 15,000 metro & eco trips across the city",
+    progress: 11247,
+    target: 15000,
+    daysLeft: 4,
+    participants: 4823,
+    reward: "Plant 200 saplings in KBR Park & sponsor 10 e-rickshaws"
   };
 
   const leaderboard = [
-    { rank: 1, name: "EcoRider Sarah", score: 145, avatar: "🚴‍♀️" },
-    { rank: 2, name: "GreenCommuter", score: 132, avatar: "🚌" },
-    { rank: 3, name: "WalkingWarrior", score: 128, avatar: "🚶‍♂️" },
-    { rank: 4, name: "You", score: 87, avatar: "🌱", isUser: true },
+    { rank: 1, name: "MetroMaster Priya", score: 245, avatar: "🚇" },
+    { rank: 2, name: "HydCyclist Arjun", score: 198, avatar: "🚴‍♂️" },
+    { rank: 3, name: "EcoCommuter Ravi", score: 156, avatar: "🚌" },
+    { rank: 4, name: "You", score: 127, avatar: "🌱", isUser: true },
+    { rank: 5, name: "GreenTechie Sneha", score: 98, avatar: "🚶‍♀️" },
   ];
 
   return (

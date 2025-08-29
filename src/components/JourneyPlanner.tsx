@@ -12,30 +12,50 @@ const JourneyPlanner = () => {
   const routeOptions = [
     {
       id: 1,
+      type: "metro",
+      icon: <Bus className="h-4 w-4" />,
+      duration: "25 min",
+      co2: "0.5 kg",
+      cost: "₹25",
+      eco: true,
+      route: "Miyapur to Hitech City"
+    },
+    {
+      id: 2,
       type: "bike",
       icon: <Bike className="h-4 w-4" />,
-      duration: "22 min",
+      duration: "35 min",
       co2: "0 kg",
-      calories: "180",
+      calories: "220",
       cost: "Free",
       eco: true,
     },
     {
-      id: 2,
+      id: 3,
       type: "bus",
       icon: <Bus className="h-4 w-4" />,
-      duration: "18 min",
-      co2: "0.8 kg",
-      cost: "$2.50",
+      duration: "42 min",
+      co2: "1.2 kg",
+      cost: "₹15",
       eco: true,
+      route: "TSRTC City Bus"
     },
     {
-      id: 3,
-      type: "car",
+      id: 4,
+      type: "auto",
       icon: <Car className="h-4 w-4" />,
-      duration: "12 min",
-      co2: "3.2 kg",
-      cost: "$8.40",
+      duration: "18 min",
+      co2: "2.1 kg",
+      cost: "₹120",
+      eco: false,
+    },
+    {
+      id: 5,
+      type: "cab",
+      icon: <Car className="h-4 w-4" />,
+      duration: "15 min",
+      co2: "2.8 kg",
+      cost: "₹180",
       eco: false,
     },
   ];
@@ -53,7 +73,7 @@ const JourneyPlanner = () => {
           <div className="relative">
             <MapPin className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
             <Input
-              placeholder="From"
+              placeholder="From (e.g., Banjara Hills)"
               value={from}
               onChange={(e) => setFrom(e.target.value)}
               className="pl-10"
@@ -62,7 +82,7 @@ const JourneyPlanner = () => {
           <div className="relative">
             <MapPin className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
             <Input
-              placeholder="To"
+              placeholder="To (e.g., Hitech City)"
               value={to}
               onChange={(e) => setTo(e.target.value)}
               className="pl-10"
