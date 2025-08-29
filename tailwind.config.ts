@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Eco-friendly design system colors
+				'eco-primary': 'hsl(var(--eco-primary))',
+				'eco-primary-light': 'hsl(var(--eco-primary-light))',
+				'eco-secondary': 'hsl(var(--eco-secondary))',
+				'eco-accent': 'hsl(var(--eco-accent))',
+				'eco-success': 'hsl(var(--eco-success))',
+				'eco-warning': 'hsl(var(--eco-warning))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +74,18 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-eco': 'var(--gradient-eco)',
+				'gradient-eco-light': 'var(--gradient-eco-light)',
+				'gradient-hero': 'var(--gradient-hero)',
+			},
+			boxShadow: {
+				'eco': 'var(--shadow-eco)',
+				'eco-light': 'var(--shadow-eco-light)',
+			},
+			transitionTimingFunction: {
+				'eco': 'var(--transition-eco)',
 			},
 			keyframes: {
 				'accordion-down': {
